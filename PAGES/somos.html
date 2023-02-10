@@ -6,36 +6,57 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
       <!--link fuente-->
       <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=Playfair+Display&display=swap" rel="stylesheet">
+      <!--link bt-->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
     <!--link css-->
     <link rel="stylesheet" href="../CSS/estilos.css">
     <title>somos</title>
 </head>
 <body>
     <header>
-        <div class="container">
-            <a href="../index.html">
-                <img class="logo" src="../IMG/Logo-menupx.png" alt="logo secundario de la empresa boton de menu">
-            </a>
-            <div class="logosHeader">
-                <img src="../IMG/lupa.png" alt="icono de ayuda">
-                <img src="../IMG/shopping-basket.png" alt="icono de compra">
-                <img src="../IMG/usuario.png" alt="icono de registro">
+         <!--menu bt-->
+    <nav class="navbar navbar-expand-lg">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="../index.html">
+            <img src="../IMG/Logo-menupx.png" alt=""></a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarText" aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarText">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="../PAGES/catalogo.html">Catalogo</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="../PAGES/contacto.html">Contacto</a>
+              </li>
+            </ul>
+            <!-- segunda parte del menu-->
+            <div class="nav-items">
+              <ul class="nav justify-content-end">
+                <li class="nav-item">
+                  <img class="logo" src="../IMG/lupa.png" alt="icono de ayuda">
+                </li>
+                <li class="nav-item">
+                  <img class="logo" src="../IMG/shopping-basket.png" alt="icono de compra">
+                </li>
+                <li class="nav-item">
+                  <img class="logo" src="../IMG/usuario.png" alt="icono de registro">
+                </li>
+              </ul>
             </div>
-            <nav>
-                <div class="menu">
-                    <a href="../PAGES/catalogo.html">catalogo</a>
-                    <a href="../PAGES/catalogo.html">contacto</a> 
-                </div>    
-            </nav>
+          </div>
         </div>
+      </nav>
     </header>
 
     <main>
         <div class="container">
                 <h1>La Historia Detras De La Magia</h1>
              <div class="historia">
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Laudantium, nulla autem, porro aspernatur animi doloribus consectetur voluptatibus nobis alias voluptate deleniti aliquam minus molestiae illo. At blanditiis quae neque voluptas. Lorem ipsum dolor sit amet consectetur adipisicing elit. Aspernatur corporis recusandae maiores nulla totam necessitatibus sapiente accusantium laudantium expedita, ducimus tempore, modi iusto cupiditate consequatur esse quam voluptatibus temporibus delectus! Lorem ipsum dolor, sit amet consectetur adipisicing elit. Consectetur sequi delectus molestias repellendus, animi eligendi porro! Id libero reprehenderit laudantium maiores autem in natus magnam error aspernatur? Placeat, iure voluptas?</p>
-                <img src="../IMG/Camilo.png" alt="imagen de la persona acargo">
+              <img src="../IMG/Camilo.png" alt="imagen de la persona acargo">
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempore, nulla. Eligendi, numquam quam! Reprehenderit, quia? Recusandae alias possimus deserunt itaque odit voluptatibus labore, molestiae reprehenderit tenetur atque, voluptas culpa eos. Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quos sit sunt quod expedita cupiditate tempora nesciunt voluptates alias, quae iure possimus aliquid inventore non perspiciatis rem adipisci corporis, consectetur eaque. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consectetur dolore voluptatem temporibus dolorum obcaecati perferendis cumque optio ipsum, sunt maxime commodi dolorem itaque magnam ab eius. Ex nostrum provident quis! Lorem ipsum dolor sit, amet consectetur adipisicing elit. Officiis nostrum, perspiciatis aliquid rerum vitae fugit numquam eos quos possimus, saepe sunt, illo velit facilis repellat molestias! Magnam mollitia eaque sunt.</p>
+
             </div>
         </div>
 
@@ -49,5 +70,6 @@
             <p>&copy; todos los derechos reservados</p>
         </div>
     </footer>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js" integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN" crossorigin="anonymous"></script>
 </body>
 </html>

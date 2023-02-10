@@ -39,7 +39,7 @@ li{font-size: 15px;}
     margin: auto;
 }
 
-/*estilos index*/
+/*estilos index pantalla mobil*/
 
 /*estilos del header*/
 header{
@@ -48,29 +48,28 @@ header{
     
 }
 
-header .logo{
-    display: flex;
-    flex-direction: row;
-}
-
-.menu a{
+.nav-link{
     background-color: rgb(79, 79, 233);
     font-weight: bold;
     padding: 8px 12px;
+    margin: 2px;
     border-radius: 7px;
     border: 1px solid rgb(15, 15, 15);
     box-shadow: 2px 2px 10px rgb(15, 15, 15) ;
     color: black;
     display: inline-block;
     text-decoration: none;
-
 }
-
-.logosHeader img{
-    display: inline-block;
-    flex-direction: row;
-    box-shadow: 2px 2px 10px  rgb(15, 15, 15) ;
-       
+.nav-items{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;    
+}
+.nav-items .logo{
+    margin: 3px;
+    height: 25px;
+    border-radius: 5px;
+    
 }
 
 /*estilos main*/
@@ -78,29 +77,75 @@ header .logo{
 main{
     text-align: center;
 }
-/*estilos logo principal*/
-section{
+main div .container-logo{
     background-color: white;
-   
-}
-.logoPri{
-    width: 350px;
+    
 }
 
+main img{
+    width: 45%; 
+}
+
+/*estilos proceso principal*/
+
+.title{
+    box-sizing: bold;
+}
 .proceso{
-    display: flex;
-    flex-direction: row;
-  
+    display: grid;
+    grid-template-columns: 200px 200px;
+    grid-template-rows: 150px 150px;
+    justify-content: center;
+    grid-auto-rows: auto;
     
 }
 .proceso img{
-    width: 250px;
-    height: 200px;
+    width: 80%;
 }
-
 footer{
+    margin: 5px;
     text-align: center;
 }
+
+/*pantallas de table*/
+
+/*pantalla de computador*/
+
+@media (min-width: 768px) {
+    
+    /*estilos main*/
+    
+        main{
+            text-align: center;
+        
+        }
+    /*estilos logo principal*/
+        section{
+            background-color: white;
+       
+        }
+        .logoPri{
+            width: 350px;
+        }
+    
+        .proceso{
+            display: grid;
+            grid-template-columns: 200px 250px 200px 200px;
+            grid-template-rows: 200px 200px 200px ;
+            justify-content: center;
+            grid-auto-rows: auto;
+        
+        }
+        .proceso img{
+            width: 100%;
+            border-radius: 23px;
+            border: 2px solid black;
+            box-shadow: 5px 5px 5px;
+        }
+    
+    }
+
+
 
 
 /*estilos contacto*/
@@ -109,15 +154,89 @@ footer{
 
 .tortaContacto{
     width: 300px;
+    margin: 10px;
+    border-radius: 30px;
+    box-shadow: 3px 3px;
+}
+.nombre{
+    grid-template-areas: nombre;
+}
+.correo{
+    grid-template-areas: correo;
+}
+.numero{
+    grid-template-areas: numero;
+}
+.asunto{
+   grid-template-areas: asunto;
+}
+.formulario{
+    background-color: rgb(209, 141, 164);
+    height: 450px;
+    display: grid;
+    grid-gap: 0.5em;
+    grid-template-columns: 50%;
+    grid-template-rows: 15%;
+    grid-template-areas: 
+     "nombre"
+     "numero"
+     "asunto"
+     "correo";
+    justify-content: center;
+    text-align: start;
+    border: 3px solid black;
+}
+.container1{
+    padding: 15px 10px;
+}
+.redes{
+    display: grid;
+    grid-template-columns: 70px 70px 70px;
+    grid-template-rows: 30px;
+    width: 100%;
+    justify-content: center;
+    }
+
+.redes img{
+    width: 50%;
+    border-radius: 15px;
+
 }
 
 .informacion{
-    display: row;
+    margin-top: 20px;
+    display: grid;
+    grid-template-columns: 30px 30px;
+    grid-template-rows: 25px;
+    width: 100%;
+    justify-content: center;
 }
 .informacion img{
     width: 20px;
     height: 20px;
-    display: flex;
+    
+}
+.regreso{
+    margin-top: 15px;
+}
+
+/*pantalla computador*/
+
+@media (min-width: 768px) {
+    body{
+        background-color: blanchedalmond;
+    }
+    .formulario{
+        background-color: rgb(209, 141, 164);
+        height: 450px;
+        width: 450px;
+        
+    }
+    .container1{
+        justify-content: center;
+        padding-left: 25%;
+    }
+
 }
 
 /*estilos somos*/
@@ -125,18 +244,44 @@ footer{
 /*main*/
 .historia{
     display: flex; 
+    flex-direction: row;
+    flex-wrap: wrap;
 }
 .historia p{
-    width: 800px;
-    height: 1000px;
+    width: 500px;
+    height: 500px;
 }
 .historia img{
     display: flex;
-    width: 500px;
-    height: 900px;
-    padding: 10px; 
+    width: 100%;
+    height: 80%;
+    padding: 5px; 
     margin: 10px; 
     border: 2px solid black;
+}
+
+/*pantalla de computador*/
+
+@media (min-width: 768px){
+   
+    .historia{
+        display: flex;
+        flex-direction: row-reverse;
+    }
+    .historia img{
+        display: flex;
+        width: 50%;
+        height: 50%;
+        padding: 10px; 
+        margin: 10px; 
+        border: 2px solid black;
+    }
+
+    .historia p{
+        width: 40%;
+        height: 500%;
+    }
+
 }
 
 /*estilos catalogo*/
@@ -144,22 +289,79 @@ footer{
 /*main*/
 
 .catalogo {
-    display: row;
-
+    display: grid;
+    grid-template-columns: 300px;
+    grid-template-rows: 450px;
+    justify-content: center;
+    grid-template-rows: auto;
+    padding-left: 25px;
+    
 }
 .catalogo img{
-    width: 300px;
-    height: 400px;
-    padding: 10px;
-    margin: 10px;
-    text-align: center;
-    
+    width: 70%;
+    margin: 5px;
+    border-radius: 15px;
+
+}
+.catalogo a{
+    background-color: rgb(79, 79, 233);
+    font-weight: bold;
+    padding: 3px 8px;
+    border-radius: 7px;
+    border: 1px solid rgb(15, 15, 15);
+    box-shadow: 2px 2px 10px rgb(15, 15, 15) ;
+    color: black;
+    display: inline-block;
+    text-decoration: none;
+    margin: 3px;
+    width: 70%;
 }
 
 .catalogoFooter{
     padding: 10px;
     margin: 10px;
 }
+
+
+/*pantalla de computador*/
+
+@media (min-width: 768px) {
+    
+    .png1{
+        background-color: plum;
+        grid-template-areas: png1;
+    }
+    .png2{
+        background-color: rgb(202, 250, 250);
+        grid-template-areas: png2;
+        
+    }
+    .png3{
+        background-color: tomato;
+        grid-template-areas: png3;
+
+    }
+    .png4{
+        background-color: brown;
+        grid-template-areas: png4;
+
+    }
+    .catalogo{
+        height: 100%;
+        display: grid;
+        grid-gap: 0.5em;
+        grid-template-columns: 25%;
+        grid-template-rows: 100%;
+        grid-template-areas: 
+        "png1 png2 png3 png4";
+            
+    }
+    .catalogo img{
+        width: 80%;
+    }
+}
+
+
 
 /*estilos prod-select*/
 
@@ -176,6 +378,27 @@ footer{
 .seleccion img{
     border: 1px solid rgb(15, 15, 15);
     box-shadow: 2px 2px 10px rgb(15, 15, 15) ;
+}
+.seleccion p{
+    margin-top: 15px;
+    border: 2px solid black;
+    width: 100%;
+}
+.container-select{
+    padding: 15px 10px;
+}
+
+/*pantalla de computador*/
+@media (min-width: 768px) {
+    .seleccion p{
+        margin-top: 15px;
+        border: 2px solid black;
+        width: 100%;
+    }
+    .container-select{
+        padding: 50px 20px;
+    }
+    
 }
 
 
